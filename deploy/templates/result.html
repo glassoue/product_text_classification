@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Spam Detector For SMS Messages</h2>
+		
+	</div>
+	</header>
+	<p style="color:#0000ff;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+
+		
+	{% if prediction == 0%}
+	<h2 style="color:blue;">TELEPHONIE - GPS | ACCESSOIRE TELEPHONE | COQUE - BUMPER - FACADE TELEPHONE</h2>
+	{% elif prediction == 1%}
+	<h2 style="color:blue;">LIBRAIRIE | AUTRES LIVRES | AUTRES LIVRES</h2>
+	{% elif prediction == 2%}
+	<h2 style="color:blue;">INFORMATIQUE | CONNECTIQUE - ALIMENTATION | BATTERIE</h2>
+	{% elif prediction == 3%}
+	<h2 style="color:blue;">INFORMATIQUE | CONNECTIQUE - ALIMENTATION | CHARGEUR - ADAPTATEUR SECTEUR - ALLUME CIGARE - SOLAIRE</h2>
+	{% elif prediction == 4%}
+	<h2 style="color:blue;">TELEPHONIE - GPS | ACCESSOIRE TELEPHONE | HOUSSE - ETUI - CHAUSSETTE</h2>
+    {% elif prediction == 5%}
+	<h2 style="color:blue;">DECO - LINGE - LUMINAIRE | DECORATION MURALE - TABLEAU - CADRE PHOTO - STICKER | STICKERS - LETTRES ADHESIVES</h2>
+	{% elif prediction == 6%}
+	<h2 style="color:blue;">BIJOUX -  LUNETTES - MONTRES | MONTRES | MONTRE BRACELET</h2>
+	{% elif prediction == 7%}
+	<h2 style="color:blue;">VETEMENTS - LINGERIE  | T-SHIRT - DEBARDEUR | T-SHIRT</h2>
+	{% elif prediction == 8%}
+	<h2 style="color:blue;">CULTURE - JEUX | MUSIQUE | CD</h2>
+	{% elif prediction == 9%}
+	<h2 style="color:blue;">INFORMATIQUE | COMPOSANT - PIECE DETACHEE | DALLE D'ECRAN</h2>
+	{% elif prediction == 10%}
+	<h2 style="color:blue;">BIJOUX -  LUNETTES - MONTRES | BIJOUX | BOUCLE D OREILLE</h2>
+	{% elif prediction == 11%}
+	<h2 style="color:blue;">ELECTROMENAGER | GROS APPAREILS LAVAGE-SECHAGE  | ACCESSOIRES ET PIECES - LAVAGE-SECHAGE</h2>
+	{% elif prediction == 12%}
+	<h2 style="color:blue;">TELEPHONIE - GPS | ACCESSOIRE TELEPHONE | CHARGEUR - ADAPTATEUR ALIMENTATION TELEPHONE</h2>
+	{% elif prediction == 13%}
+	<h2 style="color:blue;">TELEPHONIE - GPS | ACCESSOIRE TELEPHONE | BATTERIE TELEPHONE</h2>
+	{% elif prediction == 14%}
+	<h2 style="color:blue;">BIJOUX -  LUNETTES - MONTRES | BIJOUX | BRACELET - GOURMETTE</h2>
+	{% elif prediction == 15%}
+	<h2 style="color:blue;">LIBRAIRIE | LITTERATURE  | LITTERATURE FRANCAISE</h2>
+	{% elif prediction == 16%}
+	<h2 style="color:blue;">BIJOUX -  LUNETTES - MONTRES | BIJOUX | SAUTOIR ET COLLIER</h2>
+	{% elif prediction == 17%}
+	<h2 style="color:blue;">INFORMATIQUE | IMPRESSION - SCANNER | TONER - RECUPERATEUR DE TONER</h2>
+	{% elif prediction == 18%}
+	<h2 style="color:blue;">PHOTO - OPTIQUE | ACCESSOIRES PHOTO - OPTIQUE | BATTERIE PHOTO - OPTIQUE</h2>
+	{% elif prediction == 19%}
+	<h2 style="color:blue;">AUTO - MOTO (NEW) | PIECES | KIT GROS FREIN</h2>
+
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
