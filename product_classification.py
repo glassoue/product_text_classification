@@ -202,7 +202,8 @@ element_tfidf= tfidf_transformer.transform(element_counts).toarray()
 
 element_tfidf_pred= classifier.predict(element_tfidf)
 
-
+# delete this 
+print(element_tfidf_pred)
 
 
 
